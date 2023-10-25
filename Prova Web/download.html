@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="28 Sem Título_20231002202318.png" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/css-download.css" />
+        <link
+            rel="stylesheet"
+            type="text/javascript"
+            href="js/java-download .js"
+        />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+
+        <title>Document</title>
+    </head>
+
+    <body onload="ocultar()">
+        <div class="grad">
+            <div class="c1">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="log" src="img/Drago.png" />
+                    </a>
+                </div>
+                <div class="pesquisa">
+                    <div class="in-pesq">
+                        <input
+                            type="text"
+                            id="search-box"
+                            placeholder="Pesquisar..."
+                        />
+                        <ul id="suggestion-list"></ul>
+                    </div>
+                    <div class="bnt-pesq">
+                        <button id="search-button">
+                            <ion-icon name="search-sharp"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="ajuda.html">Ajuda</a></li>
+                            <li><a href="index.html">Inicio</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <video
+            id="background-video"
+            autoplay
+            loop
+            muted
+            poster="https://assets.codepen.io/6093409/river.jpg"
+        >
+            <source src="https://i.imgur.com/KHdh18x.mp4" type="video/mp4" />
+        </video>
+
+        <div id="download"></div>
+
+        <div class="escolha1">
+            <nav>
+                <button id="downloadButton">zip</button>
+            </nav>
+        </div>
+
+        <div class="escolha2">
+            <nav>
+                <button id="downloadButton2">rar</button>
+            </nav>
+        </div>
+        <div class="escolha3">
+            <nav>
+                <button id="downloadButton3">mega</button>
+            </nav>
+        </div>
+
+        <div class="escolha4">
+            <nav>
+                <button id="downloadButton4">mediafire</button>
+            </nav>
+        </div>
+
+        <div id="imagemjogo">
+            <iframe
+                width="350"
+                height="350"
+                src="https://www.youtube.com/embed/VCn430sHLxs?si=e_io3aEFsV1MsMZ-"
+                allow="autoplay"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+            ></iframe>
+        </div>
+
+        <div id="downloadAnimation" class="download-animation">
+            <img
+                class="imgAn"
+                src="https://gifs.eco.br/wp-content/uploads/2022/06/gifs-de-icone-carregando-41.gif"
+            />
+        </div>
+
+        <script>
+            const downloadButton = document.getElementById("downloadButton");
+            const downloadAnimation =
+                document.getElementById("downloadAnimation");
+
+            downloadButton.addEventListener("click", () => {
+                downloadButton.style.display = "block";
+                downloadAnimation.style.display = "block";
+
+                // Simule um download (aqui você pode substituir por um link de download real)
+                setTimeout(() => {
+                    downloadButton.style.display = "block";
+                    downloadAnimation.style.display = "none";
+                }, 3300); // Simulando um download de 3 segundos
+            });
+
+            const downloadButton2 = document.getElementById("downloadButton2");
+            const downloadAnimation2 =
+                document.getElementById("downloadAnimation");
+
+            downloadButton2.addEventListener("click", () => {
+                downloadButton2.style.display = "block";
+                downloadAnimation2.style.display = "block";
+
+                // Simule um download (aqui você pode substituir por um link de download real)
+                setTimeout(() => {
+                    downloadButton2.style.display = "block";
+                    downloadAnimation2.style.display = "none";
+                }, 3300); // Simulando um download de 3 segundos
+            });
+
+            const downloadButton3 = document.getElementById("downloadButton3");
+            const downloadAnimation3 =
+                document.getElementById("downloadAnimation");
+
+            downloadButton3.addEventListener("click", () => {
+                downloadButton3.style.display = "block";
+                downloadAnimation3.style.display = "block";
+
+                // Simule um download (aqui você pode substituir por um link de download real)
+                setTimeout(() => {
+                    downloadButton3.style.display = "block";
+                    downloadAnimation3.style.display = "none";
+                }, 3300); // Simulando um download de 3 segundos
+            });
+
+            const downloadButton4 = document.getElementById("downloadButton4");
+            const downloadAnimation4 =
+                document.getElementById("downloadAnimation");
+
+            downloadButton4.addEventListener("click", () => {
+                downloadButton4.style.display = "block";
+                downloadAnimation4.style.display = "block";
+
+                // Simule um download (aqui você pode substituir por um link de download real)
+                setTimeout(() => {
+                    downloadButton4.style.display = "block";
+                    downloadAnimation4.style.display = "none";
+                }, 3300); // Simulando um download de 3 segundos
+            });
+        </script>
+    </body>
+</html>

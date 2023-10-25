@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="img/28 Sem Título_20231002202318.png"
+            type="image/x-icon"
+        />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/p2.css" />
+        <link rel="stylesheet" href="css/cobrinha.css">
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+
+        <title>Cobrinha</title>
+    </head>
+    <body>
+        <div class="grad">
+            <div class="c1">
+                <div class="logo">
+                    <a href="index.html"
+                        ><img class="log" src="img/Drago.png"
+                    /></a>
+                </div>
+                <div class="pesquisa">
+                    <div class="in-pesq">
+                        <input
+                            type="text"
+                            id="search-box"
+                            placeholder="Pesquisar..."
+                        />
+                        <ul id="suggestion-list"></ul>
+                    </div>
+                    <div class="bnt-pesq">
+                        <button id="search-button">
+                            <ion-icon name="search-sharp"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="box">
+                    <button class="in-box" onclick="toggleSidebar()">
+                        <ion-icon name="menu"></ion-icon>
+                    </button>
+                    <div class="sidebar" id="sidebar">
+                        <div class="menu-lateral">
+                            <nav>
+                                <ul>
+                                    <li><a href="Ação.html">Ação</a></li>
+                                    <li>
+                                        <a href="plataforma.html">
+                                            Plataforma
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="aventura.html"> Aventura </a>
+                                    </li>
+                                    <li><a href="rpg.html">RPG</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Portfólio</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="game">
+            <div class="game-area">
+                <canvas id="area" width="400" height="400"></canvas>
+                <div class="pontuacao">
+                    Pontuação: <span id="pontos">0</span>
+                </div>
+            </div>
+    </body>
+    <script src="js/cobrinha.js"></script>
+</html>

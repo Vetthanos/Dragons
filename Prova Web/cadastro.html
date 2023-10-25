@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="28 Sem Título_20231002202318.png" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+
+        <title>Login</title>
+        <link rel="stylesheet" href="css/login.css" />
+    </head>
+    <style>
+        body {
+            background: url("https://www.hdwallpapers.in/download/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg")
+                no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: center;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .c1 {
+            width: 195vh;
+            height: 125px;
+            flex-shrink: 0;
+        }
+        .logo {
+            border-radius: 35px;
+            position: absolute;
+            width: 220px;
+            height: 120px;
+            flex-shrink: 0;
+        }
+        .pesquisa {
+            margin-top: 22px;
+            border-radius: 45px;
+            position: absolute;
+            width: 1300px;
+            height: 82px;
+            margin-left: 20%;
+            flex-shrink: 0;
+            background: rgba(34, 194, 194, 0.11);
+        }
+        .bnt-pesq {
+            border-radius: 180px;
+            width: 56px;
+            position: absolute;
+            height: 58px;
+            flex-shrink: 0;
+            background: #b4181800;
+            margin-top: 12px;
+            margin-left: 1200px;
+        }
+        .in-pesq {
+            border-radius: 35px;
+            margin-left: 25px;
+            margin-top: 22px;
+            position: absolute;
+            width: 1150px;
+            height: 37px;
+            flex-shrink: 0;
+        }
+        .box1 {
+            margin-top: 22px;
+            border-radius: 25px;
+            position: absolute;
+            width: 75px;
+            height: 82px;
+            flex-shrink: 0;
+            margin-left: 95%;
+        }
+        .search-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #search-box:focus {
+            outline: none;
+        }
+
+        /* Estilos para o campo de entrada de texto */
+        #search-box {
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            width: 1150px;
+            border: 0px solid rgba(252, 252, 252, 0);
+            border-radius: 30px;
+            font-size: 23px;
+            background-color: rgba(26, 86, 89, 0.971);
+            font-weight: 600;
+            font-family: constatia;
+        }
+
+        /* Estilos para o botão de pesquisa */
+        #search-button {
+            margin-top: 3px;
+            height: 55px;
+            width: 55px;
+            position: absolute;
+            padding: 6px 10px;
+            background-color: #00a4fda1;
+            color: #fff;
+            border: none;
+            border-radius: 10000px;
+            cursor: pointer;
+            font-size: 23px;
+        }
+
+        /* Estilos para o botão de pesquisa quando o mouse passa por cima */
+        #search-button:hover {
+            background-color: #00afbc;
+        }
+        .log {
+            margin-top: -90px;
+            margin-left: -70px;
+            height: 300px;
+            width: 350px;
+        }
+        .grad {
+            background: linear-gradient(rgba(35, 166, 226, 0.89), #5f5b5b00);
+        }
+        .menu {
+            position: absolute;
+            width: 100%;
+            font-variant: trebuchet;
+            font-size: 20px;
+            text-align: center; /* Centraliza o conteúdo do .menu horizontalmente */
+            margin-top: 110px;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            height: 40px;
+            margin-top: 14px;
+            display: inline-block; /* Coloca a lista na mesma linha horizontal */
+        }
+
+        .menu li {
+            display: inline;
+            margin-right: 60px;
+        }
+
+        .menu a {
+            position: relative;
+            font-size: 1.1em;
+            color: rgb(201, 201, 201);
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 40px;
+        }
+
+        .menu a:hover {
+            color: #ffffff;
+        }
+        .menu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 3px;
+            background: rgb(255, 255, 255);
+            border-radius: 5px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform 0.5s;
+        }
+        .menu a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .in-box {
+            height: 60px;
+            width: 50px;
+            border-radius: 20px;
+            background-color: #8686865d;
+            color: aqua;
+        }
+        #suggestion-list {
+            color: #dcdcdc;
+            position: absolute;
+            width: auto;
+            background-color: rgba(0, 204, 255, 0.457);
+            border: 1px solid rgb(18, 207, 176);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        #suggestion-list li {
+            padding: 10px;
+            border-bottom: 1px solid rgb(18, 207, 176);
+            cursor: pointer;
+        }
+
+        #suggestion-list li:hover {
+            background-color: #05d1faa8;
+        }
+        @media screen and (max-width: 1024px) {
+            .log {
+                margin-top: -70px;
+                margin-left: -70px;
+                height: 250px;
+                width: 300px;
+            }
+            .pesquisa {
+                margin-top: 22px;
+                border-radius: 45px;
+                position: absolute;
+                width: 630px;
+                height: 50px;
+                margin-left: 20%;
+                flex-shrink: 0;
+                background: rgba(34, 194, 194, 0.11);
+                margin-left: 170px;
+            }
+            .bnt-pesq {
+                border-radius: 180px;
+                width: 56px;
+                position: absolute;
+                height: 58px;
+                flex-shrink: 0;
+                background: #b4181800;
+                margin-top: 0px;
+                margin-left: 600px;
+            }
+            .in-pesq {
+                border-radius: 35px;
+                margin-left: 25px;
+                margin-top: 10px;
+                position: absolute;
+                width: 1150px;
+                height: 29px;
+                flex-shrink: 0;
+            }
+            .box {
+                margin-top: 22px;
+                border-radius: 25px;
+                position: absolute;
+                width: 75px;
+                height: 82px;
+                flex-shrink: 0;
+                margin-left: 95%;
+            }
+            #search-box {
+                color: rgb(255, 255, 255);
+                background-color: rgba(26, 86, 89, 0.971);
+                padding: 10px;
+                width: 550px;
+                height: 15px;
+                border: 0px solid rgba(252, 252, 252, 0);
+                border-radius: 30px;
+                font-size: 19px;
+                font-weight: 600;
+                font-family: constatia;
+                margin-left: -20px;
+            }
+
+            /* Estilos para o botão de pesquisa */
+            #search-button {
+                margin-left: -20px;
+                margin-top: 5px;
+                height: 39px;
+                width: 39px;
+                position: absolute;
+                padding: 6px 10px;
+                background-color: #0dd2d9;
+                color: #fff;
+                border: none;
+                border-radius: 10000px;
+                cursor: pointer;
+                font-size: 23px;
+            }
+            .in-box {
+                height: 40px;
+                width: 40px;
+                border-radius: 10px;
+                background-color: #3e7a8684;
+                color: aqua;
+                margin-left: -50px;
+                margin-top: 5px;
+            }
+            .menu {
+                position: absolute;
+                width: 100%;
+                font-variant: trebuchet;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 110px;
+            }
+
+            .menu ul {
+                margin: 0;
+                padding: 0;
+                height: 40px;
+                margin-top: -5px;
+                display: inline-block;
+            }
+
+            .menu li {
+                display: inline;
+                margin-right: 60px;
+            }
+
+            .menu a {
+                position: relative;
+                font-size: 1.1em;
+                color: rgb(201, 201, 201);
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 40px;
+            }
+        }
+    </style>
+
+    <body>
+        <div class="grad">
+            <div class="c1">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="log" src="img/Drago.png" />
+                    </a>
+                </div>
+                <div class="pesquisa">
+                    <div class="in-pesq">
+                        <input
+                            type="text"
+                            id="search-box"
+                            placeholder="Pesquisar..."
+                        />
+                        <ul id="suggestion-list"></ul>
+                    </div>
+                    <div class="bnt-pesq">
+                        <button id="search-button">
+                            <ion-icon name="search-sharp"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="index.html">Inicio</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <span class="borderLine"></span>
+            <form autocomplete="off" action="index.html">
+                <h2>Sign up</h2>
+                <div class="inputBox">
+                    <input type="text" required="required" />
+                    <span>Username</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required" />
+                    <span>E-mail</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" required="required" />
+                    <span>password</span>
+                    <i></i>
+                </div>
+                <div class="links">
+                    <a href="#">Forgot password</a>
+                    <a href="#">Signup</a>
+                </div>
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+    </body>
+</html>

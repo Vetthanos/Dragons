@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="img\Dragosup.png" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+
+        <title>Dragon's</title>
+    </head>
+    <link rel="stylesheet" href="css/genero.css" />
+    <body>
+        <div class="grad">
+            <div class="c1">
+                <div class="logo">
+                    <a href="index.html"
+                        ><img class="log" src="img/Drago.png"
+                    /></a>
+                </div>
+                <div class="pesquisa">
+                    <div class="in-pesq">
+                        <input
+                            type="text"
+                            id="search-box"
+                            placeholder="Pesquisar..."
+                        />
+                        <ul id="suggestion-list"></ul>
+                    </div>
+                    <div class="bnt-pesq">
+                        <button id="search-button">
+                            <ion-icon name="search-sharp"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="box">
+                    <button class="in-box" onclick="toggleSidebar()">
+                        <ion-icon name="menu"></ion-icon>
+                    </button>
+                    <div class="sidebar" id="sidebar">
+                        <div class="menu-lateral">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="plataforma.html"
+                                            >Plataforma
+                                        </a>
+                                    </li>
+                                    <li><a href="Ação.html">Ação</a></li>
+                                    <li><a href="rpg.html">RPG</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="ajuda.html">Ajuda</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="caixa-principal">
+            <div class="genero">
+                <h2 class="genero-text">GENERO - Aventura :</h2>
+                <img
+                    id="lod"
+                    src="https://www.pngkit.com/png/full/44-444811_adventure-time-finn-y-jake-pixel-art.png"
+                />
+            </div>
+        </div>
+        <div class="jogos">
+            <div class="games">
+                <div class="coluna-1">
+                    <a href="#">
+                        <img
+                            id="img-1"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/220px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-1"
+                            class="zoom"
+                            src="https://www.thegamesteward.com/cdn/shop/products/bloodborne-the-card-game-retail-board-game-asmodee-cmon-limited-edge-entertainment-lavka-games-portal-games-34732816466072_400x.jpg?v=1634377364"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-1"
+                            class="zoom"
+                            src="https://d25-a.sdn.cz/d_25/c_img_F_Cl/nPUZ9V.jpeg?fl=res%2C350%2C350%2C1%7Cwebp%2C80"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                </div>
+                <div class="coluna-2">
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/pt/thumb/a/aa/The_Elder_Scrolls_5_Skyrim_capa.png/270px-The_Elder_Scrolls_5_Skyrim_capa.png"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/pt/c/c0/Brothers_A_Tale_of_Two_Sons_capa.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/pt/a/aa/Firewatch_capa2.jpg"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <div class="coluna-3">
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/pt/thumb/1/1b/Little_Nightmares_capa_do_jogo.jpg/260px-Little_Nightmares_capa_do_jogo.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/en/3/3f/Broken_Age_cover_art.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5hrSxJs35gqKnvzau5GjdpgBCcRJQTKYT4x6SOnPIEgkn3_cU6GJq3g9eOdpRbWNYaM&usqp=CAU"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <div class="coluna-4">
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/pt/1/12/Capa_de_Subnautica.png"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://xgp.pl/wp-content/uploads/2023/06/the-outer-worlds-2-ps5.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/en/0/04/Hollow_Knight_first_cover_art.webp"
+                            alt=""
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js\index.js"></script>
+    </body>
+</html>

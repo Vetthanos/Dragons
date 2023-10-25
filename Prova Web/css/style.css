@@ -1,0 +1,548 @@
+body {
+    background: url("https://www.hdwallpapers.in/download/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg")
+        no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.i1 {
+    width: 1110px;
+    height: 320px;
+}
+img {
+    border-radius: 57px;
+}
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6,
+#img7,
+#img8 {
+    width: 250px;
+    height: 200px;
+}
+
+.c1 {
+    width: 195vh;
+    height: 125px;
+    flex-shrink: 0;
+}
+.logo {
+    border-radius: 35px;
+    position: absolute;
+    width: 220px;
+    height: 120px;
+    flex-shrink: 0;
+}
+.pesquisa {
+    margin-top: 22px;
+    border-radius: 45px;
+    position: absolute;
+    width: 1300px;
+    height: 82px;
+    margin-left: 20%;
+    flex-shrink: 0;
+    background: rgba(34, 194, 194, 0.11);
+}
+.bnt-pesq {
+    border-radius: 180px;
+    width: 56px;
+    position: absolute;
+    height: 58px;
+    flex-shrink: 0;
+    background: #b4181800;
+    margin-top: 12px;
+    margin-left: 1200px;
+}
+.in-pesq {
+    border-radius: 35px;
+    margin-left: 25px;
+    margin-top: 22px;
+    position: absolute;
+    width: 1150px;
+    height: 37px;
+    flex-shrink: 0;
+}
+.box {
+    margin-top: 22px;
+    border-radius: 25px;
+    position: absolute;
+    width: 75px;
+    height: 82px;
+    flex-shrink: 0;
+    margin-left: 95%;
+}
+.conteudo {
+    margin-top: 30px;
+    width: 195vh;
+    height: 1500px;
+    flex-shrink: 0;
+    border-radius: 22px;
+}
+.carrosel {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 22%;
+    width: 1110px;
+    height: 320px;
+
+    border-radius: 57px;
+    background: lightgray 50%;
+}
+.img1 {
+    margin-top: 19%;
+    margin-left: 22%;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 11px;
+}
+.img2 {
+    margin-top: 19%;
+    margin-left: 37%;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 11px;
+}
+.img3 {
+    margin-top: 19%;
+    margin-left: 52%;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 11px;
+}
+.img4 {
+    margin-top: 19%;
+    margin-left: 67%;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 11px;
+}
+.img5 {
+    margin-top: 30%;
+    margin-left: 22%;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 11px;
+}
+.img6 {
+    margin-top: 30%;
+    margin-left: 37%;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 11px;
+}
+.img7 {
+    margin-top: 30%;
+    margin-left: 52%;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 11px;
+}
+.img8 {
+    margin-top: 30%;
+    margin-left: 67%;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 11px;
+}
+.prop1 {
+    margin-top: 1%;
+    margin-left: 1%;
+    position: absolute;
+    width: 350px;
+    height: 1121px;
+    flex-shrink: 0;
+    border-radius: 57px;
+}
+.prop2 {
+    margin-top: 1%;
+    margin-left: 82%;
+    position: absolute;
+    width: 300px;
+    height: 1121px;
+    flex-shrink: 0;
+    border-radius: 57px;
+}
+#carrossel {
+    width: 1110px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+#imagens {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+#search-box:focus {
+    outline: none;
+}
+
+/* Estilos para o campo de entrada de texto */
+#search-box {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 1150px;
+    border: 0px solid rgba(252, 252, 252, 0);
+    border-radius: 30px;
+    font-size: 23px;
+    background: linear-gradient(to bottom, #00e1ffd0, #4d82a5e5);
+    font-weight: 600;
+    font-family: constatia;
+}
+/* Altera a cor do texto do placeholder para vermelho */
+input[type="text"]::placeholder {
+    color: rgb(253, 253, 253);
+}
+
+/* Estilos para o botão de pesquisa */
+#search-button {
+    margin-top: 3px;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    padding: 6px 10px;
+    background-color: #00a4fda1;
+    color: #fff;
+    border: none;
+    border-radius: 10000px;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+/* Estilos para o botão de pesquisa quando o mouse passa por cima */
+#search-button:hover {
+    background-color: #00afbc;
+}
+.log {
+    margin-top: -90px;
+    margin-left: -70px;
+    height: 300px;
+    width: 350px;
+}
+.grad {
+    background: linear-gradient(rgba(35, 166, 226, 0.89), #5f5b5b00);
+}
+.menu {
+    position: absolute;
+    width: 100%;
+    font-variant: trebuchet;
+    font-size: 20px;
+    text-align: center; /* Centraliza o conteúdo do .menu horizontalmente */
+    margin-top: 110px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    margin-top: 14px;
+    display: inline-block; /* Coloca a lista na mesma linha horizontal */
+}
+
+.menu li {
+    display: inline;
+    margin-right: 60px;
+}
+
+.menu a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+.menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.in-box {
+    height: 60px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: #8686865d;
+    color: aqua;
+}
+#suggestion-list {
+    color: #dcdcdc; /* Ou outra cor de sua escolha */
+    position: absolute;
+    width: auto;
+    background-color: rgba(0, 204, 255, 0.457);
+    border: 1px solid rgb(18, 207, 176);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1; /* Sobrepor outros elementos */
+    border-radius: 5px; /* Borda arredondada */
+}
+#suggestion-list li {
+    padding: 10px;
+    border-bottom: 1px solid rgb(18, 207, 176);
+    cursor: pointer;
+}
+#suggestion-list li:hover {
+    background-color: #05d1faa8;
+}
+.sidebar {
+    margin-top: 30px;
+    width: 0;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(to top, rgb(0, 162, 255), rgb(32, 32, 143));
+    transition: width 1s;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0; /* Mude para a esquerda */
+}
+
+.sidebar a {
+    padding: 16px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+.menu-lateral {
+    margin-top: -70px;
+    font-variant: trebuchet;
+    font-size: 18px;
+}
+.menu-lateral li {
+    display: inline;
+}
+
+.menu-lateral a {
+    font-family: Georgia;
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-lateral a:hover {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+    #anu {
+        width: 160px;
+        height: 600px;
+    }
+    #anu2 {
+        width: 160px;
+        height: 600px;
+    }
+    .i1 {
+        width: 550px;
+        height: 300px;
+    }
+    #img1,
+    #img2,
+    #img3,
+    #img4,
+    #img5,
+    #img6,
+    #img7,
+    #img8 {
+        width: 130px;
+        height: 120px;
+        margin-top: 140px;
+        border-radius: 40px;
+        margin-left: -10px;
+    }
+    .img5,
+    .img6,
+    .img7,
+    .img8 {
+        margin-top: 34%;
+    }
+    #carrossel {
+        width: 550px; /* Largura ajustada para 400px */
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+    #imagens {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transition: transform 1s ease-in-out;
+    }
+    .slide {
+        width: 550px; /* Largura ajustada para 400px */
+        height: 320px;
+        flex-shrink: 0;
+    }
+    .carrosel {
+        position: absolute;
+        margin-top: 2%;
+        margin-left: 22%;
+        width: 400px;
+        height: 320px;
+        border-radius: 57px;
+        background: rgba(211, 211, 211, 0) 50%;
+    }
+    .log {
+        margin-top: -70px;
+        margin-left: -70px;
+        height: 250px;
+        width: 300px;
+    }
+    .pesquisa {
+        margin-top: 22px;
+        border-radius: 45px;
+        position: absolute;
+        width: 630px;
+        height: 50px;
+        margin-left: 20%;
+        flex-shrink: 0;
+        background: rgba(34, 194, 194, 0.11);
+        margin-left: 170px;
+    }
+    .bnt-pesq {
+        border-radius: 180px;
+        width: 56px;
+        position: absolute;
+        height: 58px;
+        flex-shrink: 0;
+        background: #b4181800;
+        margin-top: 0px;
+        margin-left: 600px;
+    }
+    .in-pesq {
+        border-radius: 35px;
+        margin-left: 25px;
+        margin-top: 10px;
+        position: absolute;
+        width: 1150px;
+        height: 29px;
+        flex-shrink: 0;
+    }
+    .box {
+        margin-top: 22px;
+        border-radius: 25px;
+        position: absolute;
+        width: 75px;
+        height: 82px;
+        flex-shrink: 0;
+        margin-left: 95%;
+    }
+    #search-box {
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        width: 550px;
+        height: 15px;
+        border: 0px solid rgba(252, 252, 252, 0);
+        border-radius: 30px;
+        font-size: 19px;
+        font-weight: 600;
+        font-family: constatia;
+        margin-left: -20px;
+    }
+    /* Estilos para o botão de pesquisa */
+    #search-button {
+        margin-left: -20px;
+        margin-top: 5px;
+        height: 39px;
+        width: 39px;
+        position: absolute;
+        padding: 6px 10px;
+        background-color: #0dd2d9;
+        color: #fff;
+        border: none;
+        border-radius: 10000px;
+        cursor: pointer;
+        font-size: 23px;
+    }
+    .in-box {
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+        background-color: #3e7a8684;
+        color: aqua;
+        margin-left: -50px;
+        margin-top: 5px;
+    }
+    .menu {
+        position: absolute;
+        width: 100%;
+        font-variant: trebuchet;
+        font-size: 20px;
+        text-align: center; /* Centraliza o conteúdo do .menu horizontalmente */
+        margin-top: 110px;
+    }
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        margin-top: -5px;
+        display: inline-block; /* Coloca a lista na mesma linha horizontal */
+    }
+    .menu li {
+        display: inline;
+        margin-right: 60px;
+    }
+    .menu a {
+        position: relative;
+        font-size: 1.1em;
+        color: rgb(201, 201, 201);
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;
+    }
+}

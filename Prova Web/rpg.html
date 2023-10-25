@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="img\Dragosup.png" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+
+        <title>Dragon's</title>
+    </head>
+    <link rel="stylesheet" href="css/genero.css" />
+    <body>
+        <div class="grad">
+            <div class="c1">
+                <div class="logo">
+                    <a href="index.html"
+                        ><img class="log" src="img/Drago.png"
+                    /></a>
+                </div>
+                <div class="pesquisa">
+                    <div class="in-pesq">
+                        <input
+                            type="text"
+                            id="search-box"
+                            placeholder="Pesquisar..."
+                        />
+                        <ul id="suggestion-list"></ul>
+                    </div>
+                    <div class="bnt-pesq">
+                        <button id="search-button">
+                            <ion-icon name="search-sharp"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="box">
+                    <button class="in-box" onclick="toggleSidebar()">
+                        <ion-icon name="menu"></ion-icon>
+                    </button>
+                    <div class="sidebar" id="sidebar">
+                        <div class="menu-lateral">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="plataforma.html"
+                                            >Plataforma
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="aventura.html">Aventura</a>
+                                    </li>
+                                    <li><a href="Ação.html">Ação</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="ajuda.html">Ajuda</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="caixa-principal">
+            <div class="genero">
+                <h2 class="genero-text">GENERO - RPG :</h2>
+                <img
+                    id="lod"
+                    src="https://images.tcdn.com.br/files/599593/themes/191/img/settings/dado.png"
+                />
+            </div>
+        </div>
+        <div class="jogos">
+            <div class="games">
+                <div class="coluna-1">
+                    <a href="#">
+                        <img
+                            id="img-1"
+                            class="zoom"
+                            src="https://m.media-amazon.com/images/I/61NMSffoXfL._AC_UF894,1000_QL80_.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-1"
+                            class="zoom"
+                            src="https://rosstoys.com/wp-content/uploads/ELDEN-RING-Deluxe-Edition.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-1"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Undertale_cover.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                </div>
+                <div class="coluna-2">
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/pt/thumb/a/aa/The_Elder_Scrolls_5_Skyrim_capa.png/270px-The_Elder_Scrolls_5_Skyrim_capa.png"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/pt/1/15/Nier_Automata_capa.png"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://m.media-amazon.com/images/I/71+qNsYZgEL._AC_UF1000,1000_QL80_.jpg"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <div class="coluna-3">
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/en/8/89/Dragon_Age_Origins_cover.png"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://cdn.awsli.com.br/600x450/1124/1124488/produto/141966392/af17028353.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://m.media-amazon.com/images/I/71kfKfo3OoL.jpg"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <div class="coluna-4">
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="data:image/jpeg;base64,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"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAHqIn20WNaY2cxGvRBxVAgS6QTGxFfNML5OWJ4Hd8mHKR0itywxYtqgsDM4LefAllqc&usqp=CAU"
+                            alt=""
+                        />
+                    </a>
+                    <br />
+                    <a href="#">
+                        <img
+                            id="img-2"
+                            class="zoom"
+                            src="https://upload.wikimedia.org/wikipedia/en/0/04/Hollow_Knight_first_cover_art.webp"
+                            alt=""
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js\index.js"></script>
+    </body>
+</html>
